@@ -1,0 +1,458 @@
+.App {
+  background: white;
+}
+
+button {
+  padding: 12px 0;
+  background: #1070FE;
+  color: white;
+  font-weight: 600;
+  font-size: 2em;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.forms-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 60%;
+}
+.forms-wrapper button {
+  width: 30%;
+}
+.forms-wrapper div {
+  width: 100%;
+}
+.forms-wrapper div form {
+  margin-top: 7px;
+  width: 100%;
+}
+.forms-wrapper div form p {
+  padding-left: 3px;
+  font-size: 12px;
+  color: #4a4a4acc;
+  text-align: left;
+}
+.forms-wrapper div form input {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  padding: 2%;
+  width: 100%;
+  font-size: 18px;
+  color: #353535;
+  border: 1px solid #4a4a4a69;
+  border-radius: 5px;
+}
+.forms-wrapper div form input:hover {
+  border: 1px solid #525252;
+}
+.forms-wrapper div form input:focus {
+  border: 1px solid #525252;
+}
+
+.change-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.change-picture button {
+  padding: 2px 18px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+.change-picture button:first-child {
+  color: #5d5c5c;
+  background: white;
+  font-size: 17px;
+  box-shadow: none;
+}
+.change-picture button:first-child:hover {
+  color: #424141;
+}
+.change-picture button:last-child {
+  margin: 3% 0;
+  background: #1070FE;
+}
+.change-picture button:last-child:hover {
+  background: #065ad6;
+}
+.change-picture .new-picture-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 60%;
+  color: black;
+}
+.change-picture .new-picture-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  width: 100%;
+  height: 450px;
+  border: 1px dashed black;
+}
+.change-picture .new-picture-wrapper form p {
+  margin: 2% 0;
+  font-size: 32px;
+  font-weight: 200;
+}
+.change-picture .new-picture-wrapper form p:last-child {
+  font-size: 14px;
+  margin-top: 9%;
+}
+.change-picture .new-picture-wrapper form label {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  padding: 2px 18px;
+  background: #2196f3;
+  color: white;
+  font-size: 13px;
+  opacity: 0.6;
+  border-radius: 3px;
+}
+.change-picture .new-picture-wrapper form label:hover, .change-picture .new-picture-wrapper form label:focus {
+  opacity: 1;
+}
+.change-picture .new-picture-wrapper form label input {
+  display: none;
+}
+
+.edit-picture-wrapper {
+  width: 40%;
+  height: 100%;
+}
+.edit-picture-wrapper h4 {
+  padding: 3% 0;
+  text-align: center;
+  font-size: 15px;
+}
+.edit-picture-wrapper .scale-input {
+  display: flex;
+  padding: 10px 0;
+}
+.edit-picture-wrapper .scale-input span {
+  margin-right: 10%;
+  font-size: 13px;
+  color: #424141bd;
+  font-weight: 600;
+}
+.edit-picture-wrapper .edit-logo-block {
+  position: relative;
+  padding: 1%;
+  height: 21.5%;
+  border: 1px dashed black;
+  overflow: hidden;
+}
+.edit-picture-wrapper .edit-logo-block div {
+  position: absolute;
+}
+.edit-picture-wrapper .edit-logo-block div img {
+  object-fit: contain;
+}
+.edit-picture-wrapper .edit-logo-block div p {
+  font-size: 1.5vw;
+  color: black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.edit-picture-wrapper .edit-logo-block div.client-brand p {
+  font-size: 2.5vw;
+}
+.edit-picture-wrapper p {
+  text-align: left;
+}
+.edit-picture-wrapper .save-cancel-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.edit-picture-wrapper .save-cancel-wrapper button:first-child {
+  background: white;
+  font-size: 13px;
+}
+.edit-picture-wrapper .save-cancel-wrapper button:first-child:hover {
+  color: #424141;
+}
+.edit-picture-wrapper .save-cancel-wrapper button:last-child {
+  background: #ff8100ba;
+}
+.edit-picture-wrapper .save-cancel-wrapper button:last-child:hover {
+  background: #ff8100e0;
+}
+
+body .create-or-edit {
+  height: 700px;
+}
+body .create-or-edit .client-name-saved {
+  margin-bottom: 2%;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+body .create-or-edit .choice-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 35%;
+}
+body .create-or-edit .choice-form-wrapper p {
+  font-size: 4em;
+}
+body .create-or-edit .choice-form-wrapper button {
+  width: 27%;
+}
+body .create-or-edit .choice-form-wrapper button:hover {
+  background: #065ad6;
+  box-shadow: -1px 1px 9px 1px rgba(78, 78, 78, 0.53);
+}
+body .create-or-edit .new-client-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .create-or-edit .new-client-wrapper .forms-wrapper {
+  padding: 7%;
+  width: 43%;
+}
+body .create-or-edit .new-client-wrapper .forms-wrapper .save-cancel-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+body .create-or-edit .new-client-wrapper .forms-wrapper .save-cancel-wrapper button {
+  padding: 5px 0;
+  font-size: 15px;
+  border-radius: 3px;
+}
+body .create-or-edit .new-client-wrapper .forms-wrapper .save-cancel-wrapper button:first-child {
+  width: 43%;
+  color: #5d5c5c;
+  background: white;
+  font-size: 17px;
+  box-shadow: none;
+}
+body .create-or-edit .new-client-wrapper .forms-wrapper .save-cancel-wrapper button:first-child:hover {
+  color: #424141;
+}
+body .create-or-edit .new-client-wrapper .forms-wrapper .save-cancel-wrapper button:last-child {
+  width: 57%;
+  background: #ffa500c4;
+}
+body .create-or-edit .new-client-wrapper .forms-wrapper .save-cancel-wrapper button:last-child:hover {
+  background: #ffa500f5;
+}
+body .create-or-edit .edit-client-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+}
+body .create-or-edit .edit-client-wrapper h3 {
+  text-align: left;
+  color: #000000c4;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+body .create-or-edit .edit-client-wrapper .all-clients-wrapper {
+  width: 40%;
+  font-size: 14px;
+}
+body .create-or-edit .edit-client-wrapper .all-clients-wrapper .list-wrapper ul {
+  padding-right: 25px;
+  overflow-y: scroll;
+  height: 490px;
+}
+body .create-or-edit .edit-client-wrapper .all-clients-wrapper .list-wrapper ul li {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  padding: 4px 13px;
+  text-align: left;
+  border-bottom: 1px solid #80808082;
+}
+body .create-or-edit .edit-client-wrapper .all-clients-wrapper .list-wrapper ul li:first-child {
+  border-top: 1px solid #80808082;
+}
+body .create-or-edit .edit-client-wrapper .all-clients-wrapper .list-wrapper ul li:hover {
+  background: #8080804d;
+}
+body .create-or-edit .edit-client-wrapper .all-clients-wrapper .list-wrapper ul li.active {
+  background: #80808026;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form {
+  padding: 0 6%;
+  width: 60%;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .logo-wrapper {
+  position: relative;
+  padding: 1%;
+  width: 85%;
+  height: 26%;
+  margin-bottom: 8%;
+  overflow: hidden;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .logo-wrapper img {
+  position: absolute;
+  z-index: 0;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .logo-wrapper p {
+  position: absolute;
+  font-size: 1.5vw;
+  color: black;
+  z-index: 10;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .logo-wrapper p.client_name {
+  font-size: 2.5vw;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form button {
+  margin: 7px 0;
+  padding: 5px 0;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 3px;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form button:hover {
+  background: #065ad6;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper {
+  display: flex;
+  width: 100%;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .forms-wrapper {
+  position: relative;
+  margin: -4% 3% 0 0;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .forms-wrapper .last-button {
+  margin: 0;
+  background: #ffa500c4;
+  color: white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.22);
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .forms-wrapper .save-cancel-wrapper {
+  position: relative;
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .forms-wrapper .save-cancel-wrapper p {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  color: #5a5959;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .forms-wrapper .save-cancel-wrapper p.saved {
+  opacity: 1;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .forms-wrapper .save-cancel-wrapper button {
+  width: 30%;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .forms-wrapper .save-cancel-wrapper button:hover {
+  background: #ffa500f5;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 40%;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .information-wrapper .buttons-wrapper .last-button {
+  margin: 0;
+  width: 45%;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper {
+  position: absolute;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+  z-index: 500;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 8%;
+  width: 250px;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: #5a5959;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content .title {
+  display: flex;
+  justify-content: space-between;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content .title h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content p {
+  text-align: left;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content p:first-child {
+  font-size: 11px;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content p:last-child {
+  padding: 2% 0;
+  font-size: 9px;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content .buttons-wrapper button {
+  width: 50%;
+  padding: 3px 0;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content .buttons-wrapper button:first-child {
+  color: #5d5c5c;
+  background: white;
+  box-shadow: none;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content .buttons-wrapper button:first-child:hover {
+  color: #424141;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content .buttons-wrapper button:last-child {
+  background: #ff8d00e0;
+}
+body .create-or-edit .edit-client-wrapper .edit-client-form .pop-up-wrapper .pop-up-content .buttons-wrapper button:last-child:hover {
+  background: #ffa500f5;
+}
+
+/*# sourceMappingURL=clients.css.map */

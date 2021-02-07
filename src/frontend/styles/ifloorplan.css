@@ -1,0 +1,161 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mainWrapIfloorplan {
+    /*padding: 10px; */
+    background: white;
+    box-sizing: border-box;
+    /* resize: horizontal; */
+    overflow: hidden;
+    position: relative;
+    /*border: 2px black dashed;*/
+    height: calc(100vh - 85px);
+    width: calc((100vh - 85px) * 1.7777);
+    margin: 20px auto 0 auto;
+}
+.more {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.moreMenu {
+    position: absolute;
+    top: 38px;
+    left: -77px;
+    z-index: 100;
+}
+.more button {
+    border: none;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6) 100%);
+}
+.more button:hover {
+    background: rgb(221,218,218);
+}
+.moreMenu {
+    display: none;
+}
+a {
+    font-size: 20px;
+}
+.images img, .plan img {
+    width: 100%;
+}
+
+.images, .plan {
+    position: absolute;
+}
+
+.start {
+    /*position: relative;*/
+    /*width: auto;*/
+    /*height: inherit;*/
+  /*  width: 100%;*/
+  /*padding-bottom: 56.25%;*/
+}
+
+.ifloorCam {
+    z-index: 100;
+}
+
+.tabs {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+}
+.tabs .tab {
+    background: #EEEEEE;
+    padding: 0px 17px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.imageWrap,
+.start .images,
+.interior-image {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+}
+
+.tab.active_tab {
+    background: #a9a9a9 !important;
+}
+
+.client_wrap, .logo-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.logo-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.logo-wrapper p, .logo-wrapper img {
+    position: absolute;
+}
+.logo-wrapper .client_name {
+    font-size: 2.5vw;
+}
+.contact_name, .contact_phone, .contact_email {
+    font-size: 1.5vw;
+}
+.client_wrap_main {
+    width: 30%;
+    height: 20%;
+}
+
+.video_popup .popup-content {
+    width: 85% !important;
+    height: 86%;
+}
+.video_popup .popup-content iframe {
+    width: 100%;
+}
+.list_video {
+    display: flex;
+    justify-content: center;
+}
+.video_item {
+    margin: 0 3px;
+    background: #5e9cff;
+    padding: 3px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.video_item.active {
+    background: #e49f46;
+}
+
+.map_wrap_popup .popup-content {
+    width: 85% !important;
+    height: 80%;
+}
+
+.brandWrap:hover {
+    opacity: 1 !important;
+}
+
+.workPlace .dnd-wrapper .tabs .tab{
+    cursor: pointer;
+}
+
+.mainWrapIfloorplan .start .tabs .tab{
+    /*border: 1px solid #e0e0e0;*/
+    border-radius: 4px;
+    /*font-size: 1.6rem;*/
+    font-weight: 600;
+    color: #565656;
+    background: linear-gradient(0deg, #d5d5d5, #f4f4f4);
+    box-shadow: 0 2.5px 4px #80808082;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.6;
+}

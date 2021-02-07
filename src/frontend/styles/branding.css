@@ -1,0 +1,169 @@
+.wrap {
+    border: grey dashed 2px;
+    margin: 80px;
+    height: 700px;
+}
+.onDropBlock {
+    margin-top: 50px;
+}
+
+.dropzone h3 {
+    font-size: 4rem;
+}
+.dropzone button,
+.dragWrap button {
+    margin-top: 30px;
+    background-color: #00B0E8;
+    color: white;
+    font-size: 2rem;
+    padding: 3px 15px 3px 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.dragWrap button {
+    position: absolute;
+    z-index: 1;
+}
+
+.scalePoint {
+    position: absolute;
+    display: flex;
+    transform: translate(340px, -50px);
+}
+
+.save button {
+    background-color: #ff9a36;
+    color: white;
+    font-size: 2rem;
+    padding: 3px 15px 3px 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+#urlBrandField {
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    display: block;
+    font-size: 25px;
+    padding-left: 20px;
+}
+.formUrl .inputField label {
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    display: block;
+    margin: auto;
+    text-align: left;
+}
+.formUrl {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+   z-index: 1;
+}
+
+.inputField {
+    margin-top: 80px;
+}
+.buttonGroup {
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.buttonGroup .save {
+    background-color: #ff9a36;
+    color: white;
+    font-size: 2rem;
+    padding: 3px 15px 3px 15px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 50px;
+}
+
+.buttonGroup .cancel {
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    padding: 3px 15px 3px 15px;
+    border: none;
+    border-radius: 2px;
+}
+
+.brendingSetTitle {
+    position: absolute;
+    width: 100%;
+    margin-top: 130px;
+    z-index: 1;
+}
+
+.imageWrap:hover {
+    opacity: 1;
+}
+
+/*Title Block — Branding*/
+a:hover {
+    text-decoration: none;
+}
+.btn:hover {
+    color: #fff;
+}
+button {
+    border: none;
+}
+.titleBlock {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 5px;
+}
+.titleBlock .title,
+.navCancel {
+    font-size: 18px;
+}
+.navUpdateButtons > div,
+.wrapOptions {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #6a6a6a;
+}
+.btn {
+    color: #fff;
+    background-color: #007bd5;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 5px 45px;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: 400;
+    display: inline-block;
+    min-width: 130px;
+}
+/*---------*/
+.navMainUpdateButtons {
+    display: flex;
+}
+.wrapOptions > a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6a6a6a;
+}
+.wrapOptions > a:not(:last-child) {
+    margin-right: 100px;
+}
+.navSave {
+    background-color: #ff9800;
+    margin-left: 10px;
+}
+.wrapButtons {
+    line-height: 1;
+}

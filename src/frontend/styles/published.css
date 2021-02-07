@@ -1,0 +1,154 @@
+.header{
+  border-bottom: 2px solid #b8b8b8;
+}
+
+.title_block{
+  border-bottom: 2px solid #d3d3d3;
+  padding: 0 15px;
+}
+
+.title_block h2{
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+
+ .publ_wrap{
+  margin: 20px 100px;
+}
+
+.search{
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.search .fas.fa-search {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 1px;
+  top: 1px;
+  width: 35px;
+  font-size: 20px;
+  padding-top: 2px;
+  height: 35px;
+  cursor: pointer;
+  background: white;
+}
+
+ .search input{
+   width: 100%;
+   padding: 6px 14px;
+   font-size: 18px;
+   font-weight: 600;
+ }
+
+ .search input:focus{
+   outline: none;
+ }
+
+ .plan_wrap_item{
+   padding: 16px;
+   border: 1px solid #e1e1e1;
+ }
+
+.plan_wrap_item:not(:last-child){
+  margin-bottom: 60px;
+}
+
+.plan_item{
+  display: flex;
+}
+
+.plan_item .logo{
+  margin-right: 30px;
+}
+
+.tools .address{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 27px;
+  width: 600px;
+}
+
+.tools .address h2{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: black;
+}
+
+.tools .address p{
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #979797;
+}
+
+.tools .url_option input{
+  width: 600px;
+  font-size: 13px;
+  font-weight: 600;
+  color: grey;
+  padding: 8px 10px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  margin-right: 10px;
+}
+
+.tools .url_option input:focus{
+  outline: none;
+}
+
+.tools .url_option select{
+  width: 160px;
+  font-size: 13px;
+  font-weight: 600;
+  color: grey;
+  padding: 7px 10px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.tools .url_option select:focus{
+  outline: none;
+}
+
+.tools .btn_group{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.tools .btn_group a{
+  font-size: 14px;
+  font-weight: 600;
+  color: grey;
+  padding: 5px 18px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  margin-right: 6px;
+  transition: .2s;
+}
+
+.tools .btn_group a:hover{
+  text-decoration: none;
+  background: #dddddd;
+}
+
+.tools .info p{
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+
+.brand_title{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: gray;
+  margin: 0 auto;
+}
